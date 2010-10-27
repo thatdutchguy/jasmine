@@ -92,6 +92,7 @@ jasmine.ExpectationResult = function(params) {
 
   this.message = this.passed_ ? 'Passed.' : params.message;
   this.trace = this.passed_ ? '' : new Error(this.message);
+  this.error = params.error
 };
 
 jasmine.ExpectationResult.prototype.toString = function () {
